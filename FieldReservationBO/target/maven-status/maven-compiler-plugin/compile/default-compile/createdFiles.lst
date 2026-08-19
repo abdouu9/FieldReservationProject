@@ -1,0 +1,10 @@
+com\example\FieldReservation\repositories\TerrainRepository.class
+com\example\FieldReservation\security\FirebaseConfig.class
+com\example\FieldReservation\contollers\UserController.class
+com\example\FieldReservation\FieldReservationApplication.class
+com\example\FieldReservation\repositories\UserRepository.class
+com\example\FieldReservation\entities\Terrain.class
+com\example\FieldReservation\services\TerrainService.class
+com\example\FieldReservation\entities\User.class
+com\example\FieldReservation\security\SecurityConfig.class
+com\example\FieldReservation\contollers\TerrainController.class

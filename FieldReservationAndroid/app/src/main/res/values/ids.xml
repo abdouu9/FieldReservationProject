@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnDelete" type="id" />
+    <item name="btnEdit" type="id" />
+    <item name="editName" type="id" />
+    <item name="editLocation" type="id" />
+    <item name="editPrice" type="id" />
+    <item name="btnSave" type="id" />
+    <item name="etName" type="id" />
+    <item name="etLocation" type="id" />
+    <item name="etPrice" type="id" />
+    <item name="tvPrice" type="id" />
+    <item name="tvLocation" type="id" />
+    <item name="tvName" type="id" />
+</resources>

@@ -1,0 +1,20 @@
+# Gradle files
+.gradle/
+build/
+
+# Android files
+*.iml
+.idea/
+local.properties
+.navigation/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Node / Frontend files
+node_modules/
+dist/
+
+# System files
+*.log
+.DS_Store

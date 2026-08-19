@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <item
+        android:id="@+id/action_available_terrains"
+        android:title="Terrains à réserver"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="never"/>
+        
+    <item
+        android:id="@+id/action_my_terrains"
+        android:title="Mes terrains"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        app:showAsAction="never"/>
+        
+    <item
+        android:id="@+id/action_logout"
+        android:title="Déconnexion"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
+        app:showAsAction="never"/>
+</menu> 

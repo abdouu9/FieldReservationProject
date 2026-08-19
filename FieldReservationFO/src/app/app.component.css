@@ -1,0 +1,17 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure the app takes full height */
+html, body {
+  height: 100%;
+}
+
+/* Make sure the app root takes full height */
+app-root {
+  display: block;
+  height: 100%;
+}

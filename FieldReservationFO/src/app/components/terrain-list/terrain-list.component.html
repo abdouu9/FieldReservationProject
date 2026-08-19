@@ -1,0 +1,50 @@
+<div class="container mt-4">
+  <h2>Terrain List</h2>
+  
+  <div class="mb-3">
+    <button class="btn btn-primary" routerLink="/terrains/new">Add New Terrain</button>
+  </div>
+
+  <div *ngIf="loading" class="text-center">
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <p class="mt-2">Loading terrains...</p>
+  </div>
+
+  <div *ngIf="error" class="alert alert-danger">
+    {{ error }}
+  </div>
+
+  <div *ngIf="!loading && !error && terrains.length === 0" class="alert alert-info">
+    No terrains found. Click "Add New Terrain" to create one.
+  </div>
+
+  <div class="table-responsive" *ngIf="!loading && !error && terrains.length > 0">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Location</th>
+          <th>Price</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let terrain of terrains">
+          <td>{{ terrain.name }}</td>
+          <td>{{ terrain.location }}</td>
+          <td>{{ terrain.price | currency }}</td>
+          <td>
+            <button class="btn btn-sm btn-primary me-2" (click)="editTerrain(terrain.id!)">
+              Edit
+            </button>
+            <button class="btn btn-sm btn-danger" (click)="deleteTerrain(terrain.id!)">
+              Delete
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div> 

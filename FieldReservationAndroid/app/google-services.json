@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "47727610389",
+    "project_id": "fieldreservationapp",
+    "storage_bucket": "fieldreservationapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47727610389:android:0ee615dea54a4d2d049c1c",
+        "android_client_info": {
+          "package_name": "com.example.fieldreservation"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2QuLZ9v16PZ0ZZkgSpjRSnS5gMQsk2e0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

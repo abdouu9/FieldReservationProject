@@ -1,0 +1,48 @@
+<div class="container mt-4">
+  <h2>{{ isEditMode ? 'Edit Terrain' : 'Add New Terrain' }}</h2>
+
+  <div *ngIf="loading" class="text-center">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+  <div *ngIf="error" class="alert alert-danger">
+    {{ error }}
+  </div>
+
+  <form [formGroup]="terrainForm" (ngSubmit)="onSubmit()" class="mt-3">
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" id="name" formControlName="name">
+      <div *ngIf="terrainForm.get('name')?.invalid && terrainForm.get('name')?.touched" class="text-danger">
+        Name is required
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="location" class="form-label">Location</label>
+      <input type="text" class="form-control" id="location" formControlName="location">
+      <div *ngIf="terrainForm.get('location')?.invalid && terrainForm.get('location')?.touched" class="text-danger">
+        Location is required
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="price" class="form-label">Price</label>
+      <input type="number" class="form-control" id="price" formControlName="price">
+      <div *ngIf="terrainForm.get('price')?.invalid && terrainForm.get('price')?.touched" class="text-danger">
+        Price must be greater than or equal to 0
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <button type="submit" class="btn btn-primary" [disabled]="terrainForm.invalid || loading">
+        {{ isEditMode ? 'Update' : 'Create' }} Terrain
+      </button>
+      <button type="button" class="btn btn-secondary ms-2" (click)="router.navigate(['/terrains'])">
+        Cancel
+      </button>
+    </div>
+  </form>
+</div> 
